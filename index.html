@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stuti Varshney | B.Tech 1st Year Portfolio</title>
+  <meta name="description" content="Personal portfolio of Stuti Varshney, a 1st Year B.Tech student at JECRC, Jaipur skilled in C Language, AI/ML Awareness, Prompt Writing, and Tech Communication." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Inter and Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar-header" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Stuti.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="assets/resume.pdf" download="Stuti_Varshney_Resume.pdf" class="btn btn-outline btn-sm">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li>
+          <a href="assets/resume.pdf" download="Stuti_Varshney_Resume.pdf" class="btn btn-primary mobile-btn">
+            Download Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HOME / HERO SECTION -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>B.Tech 1st Year • JECRC Jaipur</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text" id="heroName">Stuti Varshney</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Passionate <span class="typing-text" id="typingText">Tech Explorer & Developer</span>
+          </p>
+
+          <p class="hero-intro">
+            A curious first-year engineering undergrad at <strong>JECRC, Jaipur</strong>, driven by deep curiosity for 
+            <strong>C Programming</strong>, <strong>Artificial Intelligence</strong>, and modern problem solving. 
+            Currently sharpening my coding fundamentals and building creative projects.
+          </p>
+
+          <!-- Interactive Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>View Projects</span>
+            </a>
+
+            <a href="assets/resume.pdf" download="Stuti_Varshney_Resume.pdf" class="btn btn-outline" id="downloadResumeBtn">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num">Year 1</span>
+              <span class="stat-label">B.Tech @ JECRC</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Programs & Labs</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">Jaipur</span>
+              <span class="stat-label">Rajasthan, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Profile Picture Showcase -->
+        <div class="hero-visual">
+          <div class="avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-frame">
+              <!-- Note: To use your own photo, place it in the assets folder as 'profile.jpg' and change src below -->
+              <img src="assets/profile-avatar.svg" alt="Stuti Varshney - Profile Picture" class="avatar-img" id="profileImage" />
+            </div>
+            <div class="floating-badge badge-c">
+              <span class="badge-icon">⚡</span>
+              <span>C Language</span>
+            </div>
+            <div class="floating-badge badge-ai">
+              <span class="badge-icon">🤖</span>
+              <span>AI / ML Awareness</span>
+            </div>
+            <div class="floating-badge badge-loc">
+              <span class="badge-icon">📍</span>
+              <span>Jaipur, RJ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">My educational journey, passions, achievements, and roots.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card 1: Educational Story -->
+          <div class="glass-card about-card edu-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <h3>Educational Story</h3>
+            <p class="card-text">
+              I am embarking on my engineering journey as a <strong>1st Year B.Tech student at JECRC, Jaipur</strong>. 
+              My fascination with technology began in high school, where I was amazed by how logic and 
+              lines of code can solve real-world problems.
+            </p>
+            <p class="card-text">
+              At JECRC, I am thoroughly studying core Computer Science principles, algorithmic thinking, 
+              computer organization, and structured programming. Every day is an exciting opportunity to 
+              expand my horizons and turn theory into functional code.
+            </p>
+            <div class="timeline-mini">
+              <div class="timeline-step">
+                <span class="step-dot"></span>
+                <div>
+                  <strong>B.Tech in Computer Science / Engineering</strong>
+                  <div class="step-sub">1st Year Undergrad • JECRC Jaipur (2026 - Present)</div>
+                </div>
+              </div>
+              <div class="timeline-step">
+                <span class="step-dot"></span>
+                <div>
+                  <strong>Senior Secondary Education (PCM)</strong>
+                  <div class="step-sub">Completed with strong mathematical & analytical foundation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Hobbies & Interests -->
+          <div class="glass-card about-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>Hobbies & Passions</h3>
+            <p class="card-text">
+              When I'm not writing code or attending lectures, I love exploring creative and intellectually stimulating pursuits:
+            </p>
+            <ul class="pill-list">
+              <li class="pill-item">
+                <span class="pill-emoji">💻</span>
+                <span>Tinkering with Open Source & Tech Gadgets</span>
+              </li>
+              <li class="pill-item">
+                <span class="pill-emoji">🧠</span>
+                <span>Crafting AI Prompts & Testing LLM Workflows</span>
+              </li>
+              <li class="pill-item">
+                <span class="pill-emoji">🎮</span>
+                <span>Strategy Gaming & Logic Puzzles</span>
+              </li>
+              <li class="pill-item">
+                <span class="pill-emoji">📚</span>
+                <span>Reading Tech Blogs & Engineering Breakthroughs</span>
+              </li>
+              <li class="pill-item">
+                <span class="pill-emoji">🏸</span>
+                <span>Outdoor Sports & Staying Active</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Achievements -->
+          <div class="glass-card about-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"/>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+              </svg>
+            </div>
+            <h3>Achievements</h3>
+            <p class="card-text">
+              Key milestones and recognitions earned along my academic and learning path:
+            </p>
+            <div class="achievement-list">
+              <div class="achievement-item">
+                <div class="achieve-badge">🏆</div>
+                <div class="achieve-info">
+                  <h4>Academic Distinction in Mathematics & Sciences</h4>
+                  <p>Consistently ranked in the top percentile of class with strong analytical clarity.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <div class="achieve-badge">🚀</div>
+                <div class="achieve-info">
+                  <h4>College Tech Club & Hackathon Enthusiast</h4>
+                  <p>Active participant in freshman coding workshops and university technical fests.</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <div class="achieve-badge">💡</div>
+                <div class="achieve-info">
+                  <h4>Prompt Engineering Certification & Self-Learning</h4>
+                  <p>Completed hands-on courses in Generative AI prompting and developer efficiency.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Location Spotlight -->
+          <div class="glass-card about-card location-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3>Location</h3>
+            <div class="location-banner">
+              <div class="loc-text">
+                <span class="loc-city">Jaipur</span>
+                <span class="loc-state">Rajasthan, India</span>
+                <span class="loc-tag">The Pink City • JECRC Jaipur</span>
+              </div>
+              <div class="loc-pin">📍</div>
+            </div>
+            <p class="card-text">
+              Proudly based in historic and vibrant <strong>Jaipur</strong>. Surrounded by a rich cultural heritage and an accelerating startup ecosystem, studying engineering at JECRC in Rajasthan inspires my journey.
+            </p>
+            <div class="loc-meta">
+              <div class="loc-item">
+                <strong>Timezone:</strong> IST (UTC +5:30)
+              </div>
+              <div class="loc-item">
+                <strong>Availability:</strong> Open to Remote & Local Collaborations
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">My Toolkit</span>
+          <h2 class="section-title">Technical & Interpersonal Skills</h2>
+          <p class="section-desc">The core competencies and modern skills I bring as an aspiring technologist.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill 1: C Language -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-c">
+                <span class="skill-symbol">C</span>
+              </div>
+              <div>
+                <h3 class="skill-title">C Language</h3>
+                <span class="skill-badge">Core Foundation</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Strong grasp of foundational computer science principles, memory layout, and systems programming logic.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Pointers & Memory</span>
+              <span class="tag">Arrays & Strings</span>
+              <span class="tag">Structures & Unions</span>
+              <span class="tag">File Handling</span>
+              <span class="tag">Algorithms & Recursion</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency & Practice</span>
+                <span class="progress-val">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 2: Communication -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-comm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Communication</h3>
+                <span class="skill-badge">Interpersonal Strength</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Clear verbal and written articulation, active listening, teamwork, and ability to break down technical ideas simply.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Technical Presentations</span>
+              <span class="tag">Team Collaboration</span>
+              <span class="tag">Active Listening</span>
+              <span class="tag">Documentation</span>
+              <span class="tag">Adaptability</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Effectiveness</span>
+                <span class="progress-val">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: AI / ML Awareness -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
+                  <path d="M16 11v1a4 4 0 0 1-8 0v-1"/>
+                  <path d="M12 17v5"/>
+                  <path d="M8 22h8"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">AI / ML Awareness</h3>
+                <span class="skill-badge">Emerging Tech</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Solid theoretical understanding of Machine Learning concepts, Neural Networks, Large Language Models, and ethical AI.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Supervised Learning</span>
+              <span class="tag">LLM Fundamentals</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">Neural Net Concepts</span>
+              <span class="tag">AI Ethics & Safety</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Conceptual Awareness</span>
+                <span class="progress-val">80%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Prompt Writing & Engineering -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-prompt">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Prompt Writing</h3>
+                <span class="skill-badge">AI Productivity</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Designing structured, context-rich prompts to steer AI models effectively for code generation, debugging, and analysis.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Few-Shot Prompting</span>
+              <span class="tag">Chain of Thought</span>
+              <span class="tag">Role/Persona Design</span>
+              <span class="tag">Context Constraints</span>
+              <span class="tag">Structured JSON Outputs</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Prompt Precision</span>
+                <span class="progress-val">90%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Developer Tools & Workflow -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-tools">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Developer Tools</h3>
+                <span class="skill-badge">Workflow</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Comfortable with essential developer tools to write clean code, track versions, and build projects.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">VS Code</span>
+              <span class="tag">Git & GitHub</span>
+              <span class="tag">GCC / MinGW</span>
+              <span class="tag">Command Line / Bash</span>
+              <span class="tag">HTML / CSS / JS</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Familiarity</span>
+                <span class="progress-val">78%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 78%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Problem Solving & Logic -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-logic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="12" y1="8" x2="12" y2="12"/>
+                  <line x1="12" y1="16" x2="12.01" y2="16"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">Problem Solving</h3>
+                <span class="skill-badge">Mindset</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Breaking complex real-life challenges into logical steps, flowcharts, and structured algorithms.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Mathematical Logic</span>
+              <span class="tag">Flowcharting</span>
+              <span class="tag">Debugging</span>
+              <span class="tag">Critical Thinking</span>
+              <span class="tag">Fast Adaptability</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Analytical Mindset</span>
+                <span class="progress-val">88%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Practical applications and experiments built during my 1st year.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="glass-card project-card">
+            <div class="project-banner project-banner-c">
+              <div class="code-preview">
+                <span class="code-line"><span class="c-keyword">#include</span> &lt;stdio.h&gt;</span>
+                <span class="code-line"><span class="c-type">int</span> <span class="c-func">main</span>() {</span>
+                <span class="code-line">&nbsp;&nbsp;<span class="c-func">printf</span>(<span class="c-str">"Student Database System\n"</span>);</span>
+                <span class="code-line">&nbsp;&nbsp;<span class="c-keyword">return</span> 0;</span>
+                <span class="code-line">}</span>
+              </div>
+              <span class="project-tag-top">C Programming</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Record Management System</h3>
+              <p class="project-desc">
+                A command-line application built in C that allows teachers and administrators to add, search, update, delete, and sort student records with binary file storage persistence.
+              </p>
+              <div class="project-tech-stack">
+                <span>C Language</span>
+                <span>File I/O</span>
+                <span>Structures</span>
+                <span>CLI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-primary">
+                  <span>Inquire / Code</span>
+                </a>
+                <span class="project-status">✓ Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="glass-card project-card">
+            <div class="project-banner project-banner-ai">
+              <div class="code-preview">
+                <span class="code-line"><span class="c-keyword">SYSTEM</span>: Expert AI Tutor</span>
+                <span class="code-line"><span class="c-type">USER</span>: Explain Pointers in C simply</span>
+                <span class="code-line"><span class="c-func">AI</span>: Memory address as a mailbox...</span>
+              </div>
+              <span class="project-tag-top">AI & Prompting</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AI Prompt Engineering Knowledge Hub</h3>
+              <p class="project-desc">
+                A curated repository of high-efficiency prompt templates designed for students: code explanation, unit-test generation, conceptual summaries, and automated research helpers.
+              </p>
+              <div class="project-tech-stack">
+                <span>Prompt Engineering</span>
+                <span>Generative AI</span>
+                <span>LLMs</span>
+                <span>Markdown</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-primary">
+                  <span>View Prompts</span>
+                </a>
+                <span class="project-status">⚡ Active</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="glass-card project-card">
+            <div class="project-banner project-banner-web">
+              <div class="code-preview">
+                <span class="code-line"><span class="c-keyword">&lt;div</span> <span class="c-type">class</span>=<span class="c-str">"portfolio"</span>&gt;</span>
+                <span class="code-line">&nbsp;&nbsp;<span class="c-keyword">&lt;h1&gt;</span>Hello Jaipur!<span class="c-keyword">&lt;/h1&gt;</span></span>
+                <span class="code-line"><span class="c-keyword">&lt;/div&gt;</span></span>
+              </div>
+              <span class="project-tag-top">Web Development</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Interactive Personal Portfolio</h3>
+              <p class="project-desc">
+                This responsive, modern portfolio website built from scratch with custom CSS glassmorphism, responsive navigation, active scroll tracking, and interactive contact message handling.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML5</span>
+                <span>CSS3 (Gradients/Grid)</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="#home" class="btn btn-sm btn-primary">
+                  <span>Live Preview</span>
+                </a>
+                <span class="project-status">⭐ Live</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION (Split into 2 Sub-Sections as requested) -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-desc">Have a question, an opportunity, or just want to connect? Reach out anytime!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- SUB-SECTION 1: Contact Information & Socials -->
+          <div class="glass-card contact-info-card">
+            <div class="contact-card-header">
+              <div class="card-icon-wrap">
+                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Contact Information</h3>
+                <p class="text-muted">Feel free to reach out via email, phone, or socials.</p>
+              </div>
+            </div>
+
+            <div class="info-list">
+              <!-- Email Item -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <span class="info-label">Email Address</span>
+                  <a href="mailto:stutivarshney2506@gmail.com" class="info-val" id="emailVal">stutivarshney2506@gmail.com</a>
+                </div>
+                <button class="copy-btn" data-copy="stutivarshney2506@gmail.com" title="Copy Email" aria-label="Copy Email">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Phone Item -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <span class="info-label">Phone Number</span>
+                  <a href="tel:+919258630376" class="info-val" id="phoneVal">+91 92586 30376</a>
+                </div>
+                <button class="copy-btn" data-copy="+91 92586 30376" title="Copy Phone" aria-label="Copy Phone">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Location Item -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <span class="info-label">Location</span>
+                  <span class="info-val">Jaipur (JECRC), Rajasthan, India</span>
+                </div>
+              </div>
+
+              <!-- Status Card -->
+              <div class="availability-badge">
+                <span class="pulsing-dot"></span>
+                <span>Open for 1st Year Internships, Mentorship & Projects</span>
+              </div>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="socials-wrapper">
+              <span class="socials-title">Connect on Socials:</span>
+              <div class="social-links">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.93 0 1.68-.75 1.68-1.68 0-.93-.75-1.69-1.68-1.69-.93 0-1.69.76-1.69 1.69 0 .93.76 1.68 1.69 1.68m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+
+                <!-- Twitter / X -->
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="X (Twitter)" aria-label="X">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                  <span>Twitter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUB-SECTION 2: Send a Message Form -->
+          <div class="glass-card contact-form-card">
+            <div class="contact-card-header">
+              <div class="card-icon-wrap">
+                <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Send a Message</h3>
+                <p class="text-muted">Drop your thoughts, questions, or opportunities below.</p>
+              </div>
+            </div>
+
+            <!-- Interactive Contact Form -->
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="userName" class="form-label">Your Name <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. Rahul Verma" required />
+                </div>
+                <span class="error-text" id="nameError">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail" class="form-label">Your Email <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <input type="email" id="userEmail" name="email" class="form-input" placeholder="e.g. rahul@example.com" required />
+                </div>
+                <span class="error-text" id="emailError">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="msgSubject" class="form-label">Subject</label>
+                <div class="input-wrap">
+                  <input type="text" id="msgSubject" name="subject" class="form-input" placeholder="e.g. Let's collaborate or Say Hi!" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage" class="form-label">Your Message <span class="req">*</span></label>
+                <div class="input-wrap">
+                  <textarea id="userMessage" name="message" class="form-textarea" rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+                <span class="error-text" id="messageError">Please type your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                <span id="btnText">Send Message</span>
+              </button>
+
+              <!-- Live Submission Toast / Feedback -->
+              <div class="form-feedback hidden" id="formFeedback">
+                <div class="feedback-icon">✓</div>
+                <div class="feedback-msg">
+                  <strong>Message Sent Successfully!</strong>
+                  <p>Thank you for reaching out. I'll get back to you soon!</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="footer-logo">&lt;Stuti.dev /&gt;</a>
+        <p class="footer-copy">Crafted with curiosity & code • JECRC Jaipur, Rajasthan, India</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <a href="#home" class="back-to-top" title="Back to Top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copy / Actions -->
+  <div class="toast-notification" id="toast">Copied to clipboard!</div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
