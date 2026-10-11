@@ -1,0 +1,109 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<<
+  /Length 880
+>>
+stream
+BT
+/F2 22 Tf
+50 730 Td
+(Stuti Varshney) Tj
+0 -24 Td
+/F1 11 Tf
+(B.Tech 1st Year Student | JECRC, Jaipur) Tj
+0 -18 Td
+/F1 10 Tf
+(Email: stutivarshney2506@gmail.com | Phone: +91 92586 30376 | Jaipur, Rajasthan) Tj
+0 -36 Td
+/F2 13 Tf
+(EDUCATION) Tj
+0 -18 Td
+/F1 11 Tf
+(Bachelor of Technology - 1st Year (2026 - Present)) Tj
+0 -15 Td
+(JECRC Foundation / University, Jaipur, Rajasthan) Tj
+0 -15 Td
+(Higher Secondary Schooling - Completed with Strong Analytical & Science Base) Tj
+0 -32 Td
+/F2 13 Tf
+(TECHNICAL & INTERPERSONAL SKILLS) Tj
+0 -18 Td
+/F1 10 Tf
+(Programming: C Language (Syntax, Pointers, Arrays, Control Logic, File I/O)) Tj
+0 -15 Td
+(AI & Emerging Tech: AI/ML Awareness, Prompt Writing & Engineering, LLM Workflows) Tj
+0 -15 Td
+(Tools & Platforms: VS Code, Git, GitHub Basics, Linux CLI, HTML/CSS Foundations) Tj
+0 -15 Td
+(Soft Skills: Strong Verbal & Written Communication, Teamwork, Active Listening) Tj
+0 -32 Td
+/F2 13 Tf
+(PROJECTS) Tj
+0 -18 Td
+/F1 10 Tf
+(1. Student Record Management System - Built in C with file storage & operations) Tj
+0 -15 Td
+(2. AI Prompt Knowledge Toolkit - Curated engineering prompts for productivity) Tj
+0 -15 Td
+(3. Modern Personal Portfolio - Responsive web app showcasing skills & projects) Tj
+ET
+endstream
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000257 00000 n 
+0000001190 00000 n 
+0000001257 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+1329
+%%EOF

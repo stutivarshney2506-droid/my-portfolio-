@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="ring-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="hair-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="skin-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fce7d2" />
+      <stop offset="100%" stop-color="#f3c9a6" />
+    </linearGradient>
+    <linearGradient id="hoodie-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ambient Circle -->
+  <circle cx="200" cy="200" r="190" fill="url(#bg-grad)" stroke="url(#ring-glow)" stroke-width="4" />
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.4" />
+  <circle cx="200" cy="200" r="158" fill="#0b0f19" opacity="0.6" />
+
+  <!-- Code / Tech Badges Floating inside Avatar -->
+  <text x="45" y="110" font-family="'Courier New', monospace" font-size="13" fill="#06b6d4" opacity="0.75">&lt;dev&gt;</text>
+  <text x="315" y="115" font-family="'Courier New', monospace" font-size="13" fill="#ec4899" opacity="0.8">&#123;AI&#125;</text>
+  <text x="50" y="300" font-family="'Courier New', monospace" font-size="12" fill="#6366f1" opacity="0.7">printf();</text>
+  <text x="305" y="295" font-family="'Courier New', monospace" font-size="12" fill="#10b981" opacity="0.7">&lt;JECRC/&gt;</text>
+
+  <!-- Long Hair Behind Shoulders -->
+  <path d="M125 150 C110 210, 115 310, 145 350 C155 310, 150 220, 150 160 Z" fill="url(#hair-grad)" />
+  <path d="M275 150 C290 210, 285 310, 255 350 C245 310, 250 220, 250 160 Z" fill="url(#hair-grad)" />
+
+  <!-- Shoulders & Tech Hoodie -->
+  <path d="M90 380 C90 300, 140 260, 200 260 C260 260, 310 300, 310 380 Z" fill="url(#hoodie-grad)" stroke="#6366f1" stroke-width="2" />
+  <path d="M165 260 L200 315 L235 260 Z" fill="#1e1b4b" />
+  <!-- Cyan Accent Zipper -->
+  <line x1="200" y1="315" x2="200" y2="380" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Neck -->
+  <rect x="180" y="210" width="40" height="45" rx="8" fill="#f3c9a6" />
+
+  <!-- Face -->
+  <ellipse cx="200" cy="180" rx="58" ry="68" fill="url(#skin-grad)" />
+
+  <!-- Hair Style (Front & Sides) -->
+  <path d="M130 170 C125 110, 160 85, 200 85 C245 85, 275 110, 270 170 C258 135, 240 120, 200 120 C160 120, 142 135, 130 170 Z" fill="url(#hair-grad)" />
+  <!-- Side bangs -->
+  <path d="M135 150 C145 185, 155 210, 155 230 C150 210, 140 185, 135 150 Z" fill="#1e1b4b" />
+  <path d="M265 150 C255 185, 245 210, 245 230 C250 210, 260 185, 265 150 Z" fill="#1e1b4b" />
+
+  <!-- Stylish Glasses -->
+  <rect x="156" y="162" width="36" height="26" rx="6" fill="#111827" stroke="#06b6d4" stroke-width="2.8" />
+  <rect x="208" y="162" width="36" height="26" rx="6" fill="#111827" stroke="#06b6d4" stroke-width="2.8" />
+  <line x1="192" y1="174" x2="208" y2="174" stroke="#06b6d4" stroke-width="2.8" stroke-linecap="round" />
+  <!-- Blue Light Reflection on Lenses -->
+  <line x1="162" y1="180" x2="176" y2="167" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+  <line x1="214" y1="180" x2="228" y2="167" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+
+  <!-- Cheerful Smile -->
+  <path d="M187 210 Q200 221 213 210" fill="none" stroke="#be123c" stroke-width="3" stroke-linecap="round" />
+
+  <!-- Tech Headphones -->
+  <path d="M128 170 C125 105, 275 105, 272 170" fill="none" stroke="#ec4899" stroke-width="5" stroke-linecap="round" />
+  <rect x="122" y="165" width="16" height="34" rx="8" fill="#831843" stroke="#f472b6" stroke-width="2" />
+  <rect x="262" y="165" width="16" height="34" rx="8" fill="#831843" stroke="#f472b6" stroke-width="2" />
+
+  <!-- Active Status Glow Indicator -->
+  <circle cx="280" cy="275" r="15" fill="#090d16" stroke="#10b981" stroke-width="3" />
+  <circle cx="280" cy="275" r="8" fill="#10b981" filter="url(#soft-glow)" />
+</svg>
