@@ -3,41 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stuti Varshney | B.Tech 1st Year Portfolio</title>
-  <meta name="description" content="Personal portfolio of Stuti Varshney, a 1st Year B.Tech student at JECRC, Jaipur skilled in C Language, AI/ML Awareness, Prompt Writing, and Tech Communication." />
+  <title>Stuti Varshney | B.Tech CSE (AI & ML) Portfolio</title>
+  <meta name="description" content="Personal portfolio of Stuti Varshney, a 1st Year B.Tech CSE (AI & ML) student at JECRC University, Jaipur, Rajasthan. Exploring C Programming, Python, Web Development, and Artificial Intelligence." />
+  <meta name="keywords" content="Stuti Varshney, JECRC University, B.Tech CSE, AI and ML, Jaipur, C Programming, Python, Portfolio, Student Developer" />
+  <meta name="author" content="Stuti Varshney" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
   <!-- Google Fonts: Inter and Fira Code -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Ambient background glow elements -->
-  <div class="glow-orb orb-1" aria-hidden="true"></div>
-  <div class="glow-orb orb-2" aria-hidden="true"></div>
-  <div class="glow-orb orb-3" aria-hidden="true"></div>
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
 
   <!-- NAVIGATION BAR -->
   <header class="navbar-header" id="navbar">
     <nav class="nav-container">
-      <a href="#home" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>
-        <span class="logo-text">Stuti.dev</span>
-        <span class="logo-bracket">/&gt;</span>
+      <a href="#home" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Stuti.dev</span>
+        <span class="brand-bracket">/&gt;</span>
       </a>
 
-      <!-- Desktop Menu -->
+      <!-- Desktop Navigation Menu -->
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
+      <!-- Action Buttons & Social Quick Links -->
       <div class="nav-actions">
+        <!-- GitHub Link -->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-icon-link" title="GitHub Profile" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+          </svg>
+        </a>
+
+        <!-- LinkedIn Link -->
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="nav-icon-link" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.93 0 1.68-.75 1.68-1.68 0-.93-.75-1.69-1.68-1.69-.93 0-1.69.76-1.69 1.69 0 .93.76 1.68 1.69 1.68m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+          </svg>
+        </a>
+
+        <!-- Download Resume Button -->
         <a href="assets/resume.pdf" download="Stuti_Varshney_Resume.pdf" class="btn btn-outline btn-sm">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
@@ -54,16 +77,18 @@
       </div>
     </nav>
 
-    <!-- Mobile Drawer Navigation -->
+    <!-- Mobile Drawer Menu -->
     <div class="mobile-drawer" id="mobileDrawer">
       <ul class="mobile-nav-links">
         <li><a href="#home" class="mobile-link">Home</a></li>
-        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#about" class="mobile-link">About Me</a></li>
+        <li><a href="#education" class="mobile-link">Education</a></li>
         <li><a href="#skills" class="mobile-link">Skills</a></li>
         <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#achievements" class="mobile-link">Achievements</a></li>
         <li><a href="#contact" class="mobile-link">Contact</a></li>
-        <li>
-          <a href="assets/resume.pdf" download="Stuti_Varshney_Resume.pdf" class="btn btn-primary mobile-btn">
+        <li class="mobile-actions-row">
+          <a href="assets/resume.pdf" download="Stuti_Varshney_Resume.pdf" class="btn btn-primary btn-block">
             Download Resume
           </a>
         </li>
@@ -76,26 +101,31 @@
     <section class="section hero-section" id="home">
       <div class="container hero-grid">
         <div class="hero-content">
+          <!-- Status Badge -->
           <div class="hero-badge">
             <span class="status-dot"></span>
-            <span>B.Tech 1st Year • JECRC Jaipur</span>
+            <span>B.Tech CSE (AI &amp; ML) • 1st Year • JECRC University</span>
           </div>
 
+          <!-- Prominent Candidate Name -->
           <h1 class="hero-title">
             Hi, I'm <span class="gradient-text" id="heroName">Stuti Varshney</span>
           </h1>
 
+          <!-- Dynamic Role Tagline -->
           <p class="hero-tagline">
-            Passionate <span class="typing-text" id="typingText">Tech Explorer & Developer</span>
+            Aspiring <span class="typing-cursor" id="typingText">B.Tech CSE (AI &amp; ML) Student</span>
           </p>
 
+          <!-- Little Intro -->
           <p class="hero-intro">
-            A curious first-year engineering undergrad at <strong>JECRC, Jaipur</strong>, driven by deep curiosity for 
-            <strong>C Programming</strong>, <strong>Artificial Intelligence</strong>, and modern problem solving. 
-            Currently sharpening my coding fundamentals and building creative projects.
+            A passionate first-year engineering student at <strong>JECRC University, Jaipur</strong>, 
+            focusing on <strong>Computer Science with AI &amp; Machine Learning</strong>. 
+            Actively building strong foundations in <strong>C Programming</strong>, <strong>Python</strong>, 
+            and modern web technologies while exploring intelligent algorithmic solutions.
           </p>
 
-          <!-- Interactive Action Buttons -->
+          <!-- Primary Clickable Action Buttons -->
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">
               <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -122,15 +152,33 @@
             </a>
           </div>
 
+          <!-- GitHub and LinkedIn Quick Links -->
+          <div class="hero-social-row">
+            <span class="hero-social-label">Find Me Online:</span>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.93 0 1.68-.75 1.68-1.68 0-.93-.75-1.69-1.68-1.69-.93 0-1.69.76-1.69 1.69 0 .93.76 1.68 1.69 1.68m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Row -->
           <div class="hero-stats">
             <div class="stat-item">
               <span class="stat-num">Year 1</span>
-              <span class="stat-label">B.Tech @ JECRC</span>
+              <span class="stat-label">B.Tech CSE (AI &amp; ML)</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
-              <span class="stat-num">10+</span>
-              <span class="stat-label">Programs & Labs</span>
+              <span class="stat-num">JECRC</span>
+              <span class="stat-label">University, Jaipur</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
@@ -140,21 +188,20 @@
           </div>
         </div>
 
-        <!-- Hero Profile Picture Showcase -->
+        <!-- Hero Profile Visual Showcase -->
         <div class="hero-visual">
           <div class="avatar-card">
             <div class="avatar-glow"></div>
             <div class="avatar-frame">
-              <!-- Note: To use your own photo, place it in the assets folder as 'profile.jpg' and change src below -->
               <img src="assets/profile-avatar.svg" alt="Stuti Varshney - Profile Picture" class="avatar-img" id="profileImage" />
             </div>
             <div class="floating-badge badge-c">
               <span class="badge-icon">⚡</span>
-              <span>C Language</span>
+              <span>C &amp; Python</span>
             </div>
             <div class="floating-badge badge-ai">
               <span class="badge-icon">🤖</span>
-              <span>AI / ML Awareness</span>
+              <span>AI &amp; ML Student</span>
             </div>
             <div class="floating-badge badge-loc">
               <span class="badge-icon">📍</span>
@@ -165,126 +212,75 @@
       </div>
     </section>
 
-    <!-- 2. ABOUT SECTION -->
+    <!-- 2. ABOUT ME SECTION -->
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">Get To Know Me</span>
           <h2 class="section-title">About Me</h2>
-          <p class="section-desc">My educational journey, passions, achievements, and roots.</p>
+          <p class="section-desc">My journey, passion for technology, and aspirations as a first-year engineering student.</p>
         </div>
 
         <div class="about-grid">
-          <!-- Card 1: Educational Story -->
-          <div class="glass-card about-card edu-card">
+          <!-- Card 1: My Story -->
+          <div class="glass-card about-card">
             <div class="card-icon-wrap">
               <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
               </svg>
             </div>
-            <h3>Educational Story</h3>
+            <h3>Who I Am</h3>
             <p class="card-text">
-              I am embarking on my engineering journey as a <strong>1st Year B.Tech student at JECRC, Jaipur</strong>. 
-              My fascination with technology began in high school, where I was amazed by how logic and 
-              lines of code can solve real-world problems.
+              Hello! I'm <strong>Stuti Varshney</strong>, a 1st-year <strong>B.Tech Computer Science and Engineering</strong> student 
+              specializing in <strong>Artificial Intelligence &amp; Machine Learning</strong> at <strong>JECRC University, Jaipur</strong>.
             </p>
             <p class="card-text">
-              At JECRC, I am thoroughly studying core Computer Science principles, algorithmic thinking, 
-              computer organization, and structured programming. Every day is an exciting opportunity to 
-              expand my horizons and turn theory into functional code.
+              My curiosity for computing sparked from wanting to understand how intelligent systems solve human problems. 
+              Currently, I am strengthening my programming fundamentals in <strong>C</strong> and <strong>Python</strong>, 
+              building clean responsive web interfaces, and diving into foundational concepts of artificial intelligence.
             </p>
-            <div class="timeline-mini">
-              <div class="timeline-step">
-                <span class="step-dot"></span>
-                <div>
-                  <strong>B.Tech in Computer Science / Engineering</strong>
-                  <div class="step-sub">1st Year Undergrad • JECRC Jaipur (2026 - Present)</div>
-                </div>
-              </div>
-              <div class="timeline-step">
-                <span class="step-dot"></span>
-                <div>
-                  <strong>Senior Secondary Education (PCM)</strong>
-                  <div class="step-sub">Completed with strong mathematical & analytical foundation</div>
-                </div>
-              </div>
-            </div>
+            <p class="card-text">
+              I believe in steady daily learning, writing clean code, and working on collaborative projects that turn ideas into reality.
+            </p>
           </div>
 
-          <!-- Card 2: Hobbies & Interests -->
+          <!-- Card 2: Passions & Hobbies -->
           <div class="glass-card about-card">
             <div class="card-icon-wrap">
               <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
               </svg>
             </div>
-            <h3>Hobbies & Passions</h3>
+            <h3>Passions &amp; Interests</h3>
             <p class="card-text">
-              When I'm not writing code or attending lectures, I love exploring creative and intellectually stimulating pursuits:
+              Beyond lectures and lab assignments, here is what excites and drives me:
             </p>
             <ul class="pill-list">
               <li class="pill-item">
+                <span class="pill-emoji">🤖</span>
+                <span>Exploring Artificial Intelligence &amp; Machine Learning innovations</span>
+              </li>
+              <li class="pill-item">
                 <span class="pill-emoji">💻</span>
-                <span>Tinkering with Open Source & Tech Gadgets</span>
+                <span>Solving logic and algorithmic puzzles in C and Python</span>
               </li>
               <li class="pill-item">
-                <span class="pill-emoji">🧠</span>
-                <span>Crafting AI Prompts & Testing LLM Workflows</span>
+                <span class="pill-emoji">🎨</span>
+                <span>Crafting modern, responsive web designs with HTML &amp; CSS</span>
               </li>
               <li class="pill-item">
-                <span class="pill-emoji">🎮</span>
-                <span>Strategy Gaming & Logic Puzzles</span>
+                <span class="pill-emoji">✍️</span>
+                <span>Experimenting with prompt engineering &amp; LLM workflows</span>
               </li>
               <li class="pill-item">
                 <span class="pill-emoji">📚</span>
-                <span>Reading Tech Blogs & Engineering Breakthroughs</span>
-              </li>
-              <li class="pill-item">
-                <span class="pill-emoji">🏸</span>
-                <span>Outdoor Sports & Staying Active</span>
+                <span>Reading about emerging tech, space science, and computing history</span>
               </li>
             </ul>
           </div>
 
-          <!-- Card 3: Achievements -->
-          <div class="glass-card about-card">
-            <div class="card-icon-wrap">
-              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="8" r="7"/>
-                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-              </svg>
-            </div>
-            <h3>Achievements</h3>
-            <p class="card-text">
-              Key milestones and recognitions earned along my academic and learning path:
-            </p>
-            <div class="achievement-list">
-              <div class="achievement-item">
-                <div class="achieve-badge">🏆</div>
-                <div class="achieve-info">
-                  <h4>Academic Distinction in Mathematics & Sciences</h4>
-                  <p>Consistently ranked in the top percentile of class with strong analytical clarity.</p>
-                </div>
-              </div>
-              <div class="achievement-item">
-                <div class="achieve-badge">🚀</div>
-                <div class="achieve-info">
-                  <h4>College Tech Club & Hackathon Enthusiast</h4>
-                  <p>Active participant in freshman coding workshops and university technical fests.</p>
-                </div>
-              </div>
-              <div class="achievement-item">
-                <div class="achieve-badge">💡</div>
-                <div class="achieve-info">
-                  <h4>Prompt Engineering Certification & Self-Learning</h4>
-                  <p>Completed hands-on courses in Generative AI prompting and developer efficiency.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 4: Location Spotlight -->
+          <!-- Card 3: Location Spotlight (Jaipur, Rajasthan) -->
           <div class="glass-card about-card location-card">
             <div class="card-icon-wrap">
               <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -292,65 +288,171 @@
                 <circle cx="12" cy="10" r="3"/>
               </svg>
             </div>
-            <h3>Location</h3>
+            <h3>Location &amp; Roots</h3>
             <div class="location-banner">
               <div class="loc-text">
                 <span class="loc-city">Jaipur</span>
                 <span class="loc-state">Rajasthan, India</span>
-                <span class="loc-tag">The Pink City • JECRC Jaipur</span>
+                <span class="loc-tag">The Pink City • JECRC University Campus</span>
               </div>
               <div class="loc-pin">📍</div>
             </div>
             <p class="card-text">
-              Proudly based in historic and vibrant <strong>Jaipur</strong>. Surrounded by a rich cultural heritage and an accelerating startup ecosystem, studying engineering at JECRC in Rajasthan inspires my journey.
+              Based in historic and vibrant <strong>Jaipur, Rajasthan</strong>. Studying at JECRC University right 
+              amidst Rajasthan's growing tech and academic environment provides daily motivation to innovate and grow.
             </p>
             <div class="loc-meta">
               <div class="loc-item">
                 <strong>Timezone:</strong> IST (UTC +5:30)
               </div>
               <div class="loc-item">
-                <strong>Availability:</strong> Open to Remote & Local Collaborations
+                <strong>Status:</strong> Open to freshman internships, hackathons &amp; student collaborations
               </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Learning Philosophy -->
+          <div class="glass-card about-card">
+            <div class="card-icon-wrap">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3>Goals as a 1st Year Undergrad</h3>
+            <p class="card-text">
+              My core objectives during my first year of B.Tech CSE (AI &amp; ML):
+            </p>
+            <ul class="pill-list">
+              <li class="pill-item">
+                <span class="pill-emoji">🎯</span>
+                <span>Master data structures, pointers, and algorithmic logic in C</span>
+              </li>
+              <li class="pill-item">
+                <span class="pill-emoji">🐍</span>
+                <span>Deepen Python fundamentals for upcoming data science &amp; ML coursework</span>
+              </li>
+              <li class="pill-item">
+                <span class="pill-emoji">🌐</span>
+                <span>Build full-stack web development literacy with JavaScript</span>
+              </li>
+              <li class="pill-item">
+                <span class="pill-emoji">👥</span>
+                <span>Participate in university hackathons and active coding clubs</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">My academic qualifications and ongoing undergraduate degree.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- Degree 1: B.Tech CSE (AI & ML) -->
+          <div class="glass-card edu-card">
+            <div class="edu-icon-badge">🎓</div>
+            <div class="edu-content">
+              <div class="edu-header">
+                <h3 class="edu-degree">Bachelor of Technology (B.Tech) - CSE (AI &amp; ML)</h3>
+                <span class="edu-period">2026 – Present • 1st Year</span>
+              </div>
+              <div class="edu-institution">JECRC University, Jaipur, Rajasthan</div>
+              <p class="edu-desc">
+                Currently pursuing 1st-year undergraduate studies specializing in Computer Science and Engineering 
+                with focus on Artificial Intelligence &amp; Machine Learning. Gaining practical foundations in 
+                programming logic, problem solving, discrete mathematics, and computer systems.
+              </p>
+              <div class="edu-tags">
+                <span class="edu-tag">C Programming</span>
+                <span class="edu-tag">Python (Basic)</span>
+                <span class="edu-tag">Mathematics for Computing</span>
+                <span class="edu-tag">AI &amp; ML Foundations</span>
+                <span class="edu-tag">Digital Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schooling 1: Class XII -->
+          <div class="glass-card edu-card">
+            <div class="edu-icon-badge">🏫</div>
+            <div class="edu-content">
+              <div class="edu-header">
+                <h3 class="edu-degree">Senior Secondary Education (Class XII - PCM)</h3>
+                <span class="edu-period">Completed with Distinction</span>
+              </div>
+              <div class="edu-institution">Science Stream (Physics, Chemistry, Mathematics)</div>
+              <p class="edu-desc">
+                Built rigorous analytical thinking, calculus, algebra, and physics fundamentals that form 
+                the theoretical backbone for computer science and machine learning.
+              </p>
+              <div class="edu-tags">
+                <span class="edu-tag">Physics</span>
+                <span class="edu-tag">Chemistry</span>
+                <span class="edu-tag">Mathematics</span>
+                <span class="edu-tag">Computer Foundations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schooling 2: Class X -->
+          <div class="glass-card edu-card">
+            <div class="edu-icon-badge">📘</div>
+            <div class="edu-content">
+              <div class="edu-header">
+                <h3 class="edu-degree">Secondary Education (Class X)</h3>
+                <span class="edu-period">Completed with Honors</span>
+              </div>
+              <div class="edu-institution">General Academic Curriculum</div>
+              <p class="edu-desc">
+                Developed strong all-around academic foundations, scientific curiosity, and active extracurricular participation.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. SKILLS SECTION -->
+    <!-- 4. SKILLS SECTION -->
     <section class="section skills-section" id="skills">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">My Toolkit</span>
-          <h2 class="section-title">Technical & Interpersonal Skills</h2>
-          <p class="section-desc">The core competencies and modern skills I bring as an aspiring technologist.</p>
+          <span class="section-badge">Technical &amp; Interpersonal</span>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+          <p class="section-desc">The core programming languages, web technologies, and tools I work with.</p>
         </div>
 
         <div class="skills-grid">
-          <!-- Skill 1: C Language -->
+          <!-- Skill 1: C Programming -->
           <div class="glass-card skill-card">
             <div class="skill-head">
               <div class="skill-icon-box skill-c">
                 <span class="skill-symbol">C</span>
               </div>
               <div>
-                <h3 class="skill-title">C Language</h3>
+                <h3 class="skill-title">C Programming</h3>
                 <span class="skill-badge">Core Foundation</span>
               </div>
             </div>
             <p class="skill-desc">
-              Strong grasp of foundational computer science principles, memory layout, and systems programming logic.
+              Strong grasp of structured programming, pointers, memory allocation, arrays, strings, structures, file operations, and algorithmic logic.
             </p>
             <div class="skill-tags">
-              <span class="tag">Pointers & Memory</span>
-              <span class="tag">Arrays & Strings</span>
-              <span class="tag">Structures & Unions</span>
-              <span class="tag">File Handling</span>
-              <span class="tag">Algorithms & Recursion</span>
+              <span class="tag">Pointers &amp; Memory</span>
+              <span class="tag">Structures &amp; Unions</span>
+              <span class="tag">File I/O</span>
+              <span class="tag">Arrays &amp; Loops</span>
+              <span class="tag">Recursion</span>
             </div>
             <div class="progress-wrap">
               <div class="progress-info">
-                <span>Proficiency & Practice</span>
+                <span>Proficiency Level</span>
                 <span class="progress-val">85%</span>
               </div>
               <div class="progress-track">
@@ -359,32 +461,68 @@
             </div>
           </div>
 
-          <!-- Skill 2: Communication -->
+          <!-- Skill 2: Python (Basic) -->
           <div class="glass-card skill-card">
             <div class="skill-head">
-              <div class="skill-icon-box skill-comm">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              <div class="skill-icon-box skill-python">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2a4.9 4.9 0 0 0-4.9 4.9v2.2h4.9v.7H4.3A4.3 4.3 0 0 0 0 14.1a4.3 4.3 0 0 0 4.3 4.3h1.8v-2.5a3.6 3.6 0 0 1 3.6-3.6h4.9v-.7H9.7v-2.2A4.9 4.9 0 0 1 14.6 4.5h2.5V2H12zm-1.8 2.2a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/>
+                  <path d="M12 22a4.9 4.9 0 0 0 4.9-4.9v-2.2h-4.9v-.7h7.7A4.3 4.3 0 0 0 24 9.9a4.3 4.3 0 0 0-4.3-4.3h-1.8v2.5a3.6 3.6 0 0 1-3.6 3.6H9.4v.7h4.9v2.2A4.9 4.9 0 0 1 9.4 19.5H6.9V22H12zm1.8-2.2a1.1 1.1 0 1 1 0-2.2 1.1 1.1 0 0 1 0 2.2z"/>
                 </svg>
               </div>
               <div>
-                <h3 class="skill-title">Communication</h3>
-                <span class="skill-badge">Interpersonal Strength</span>
+                <h3 class="skill-title">Python (Basic)</h3>
+                <span class="skill-badge">AI/ML Foundation</span>
               </div>
             </div>
             <p class="skill-desc">
-              Clear verbal and written articulation, active listening, teamwork, and ability to break down technical ideas simply.
+              Comfortable with core syntax, data structures (lists, tuples, dictionaries, sets), scripting, functions, and standard libraries for problem solving.
             </p>
             <div class="skill-tags">
-              <span class="tag">Technical Presentations</span>
-              <span class="tag">Team Collaboration</span>
-              <span class="tag">Active Listening</span>
-              <span class="tag">Documentation</span>
-              <span class="tag">Adaptability</span>
+              <span class="tag">Core Syntax</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Functions &amp; Modules</span>
+              <span class="tag">File Handling</span>
+              <span class="tag">Basic Automation</span>
             </div>
             <div class="progress-wrap">
               <div class="progress-info">
-                <span>Effectiveness</span>
+                <span>Proficiency Level</span>
+                <span class="progress-val">75%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 3: HTML -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">HTML</h3>
+                <span class="skill-badge">Web Markup</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Semantic HTML5 structure, accessible markup, forms, media integration, and SEO-friendly document hierarchy.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">HTML5 Semantics</span>
+              <span class="tag">Forms &amp; Inputs</span>
+              <span class="tag">SEO Basics</span>
+              <span class="tag">Media &amp; SVGs</span>
+              <span class="tag">Accessibility</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency Level</span>
                 <span class="progress-val">90%</span>
               </div>
               <div class="progress-track">
@@ -393,10 +531,78 @@
             </div>
           </div>
 
-          <!-- Skill 3: AI / ML Awareness -->
+          <!-- Skill 4: CSS -->
           <div class="glass-card skill-card">
             <div class="skill-head">
-              <div class="skill-icon-box skill-ai">
+              <div class="skill-icon-box skill-css">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-title">CSS</h3>
+                <span class="skill-badge">Styling &amp; Layout</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              Modern responsive web design, Flexbox, CSS Grid, Custom Properties (variables), glassmorphism, transitions, and keyframe animations.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">Flexbox &amp; Grid</span>
+              <span class="tag">Responsive Media Queries</span>
+              <span class="tag">Glassmorphism</span>
+              <span class="tag">CSS Animations</span>
+              <span class="tag">Dark Mode Themes</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency Level</span>
+                <span class="progress-val">85%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 5: JavaScript (Basic) -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-js">
+                <span class="skill-symbol">JS</span>
+              </div>
+              <div>
+                <h3 class="skill-title">JavaScript (Basic)</h3>
+                <span class="skill-badge">Frontend Interactivity</span>
+              </div>
+            </div>
+            <p class="skill-desc">
+              DOM manipulation, event listeners, form validation, asynchronous callbacks, local storage, and interactive web widgets.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">DOM Manipulation</span>
+              <span class="tag">Event Listeners</span>
+              <span class="tag">Form Validation</span>
+              <span class="tag">ES6 Basics</span>
+              <span class="tag">IntersectionObserver</span>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-info">
+                <span>Proficiency Level</span>
+                <span class="progress-val">70%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" style="width: 70%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill 6: AI & Machine Learning (Learning) -->
+          <div class="glass-card skill-card">
+            <div class="skill-head">
+              <div class="skill-icon-box skill-aiml">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"/>
                   <path d="M16 11v1a4 4 0 0 1-8 0v-1"/>
@@ -405,132 +611,27 @@
                 </svg>
               </div>
               <div>
-                <h3 class="skill-title">AI / ML Awareness</h3>
-                <span class="skill-badge">Emerging Tech</span>
+                <h3 class="skill-title">AI &amp; Machine Learning</h3>
+                <span class="skill-badge">Specialization (Learning)</span>
               </div>
             </div>
             <p class="skill-desc">
-              Solid theoretical understanding of Machine Learning concepts, Neural Networks, Large Language Models, and ethical AI.
+              Exploring supervised &amp; unsupervised learning concepts, neural network architecture intuition, LLM prompting, and exploratory data concepts.
             </p>
             <div class="skill-tags">
+              <span class="tag">ML Foundations</span>
               <span class="tag">Supervised Learning</span>
-              <span class="tag">LLM Fundamentals</span>
-              <span class="tag">Generative AI</span>
-              <span class="tag">Neural Net Concepts</span>
-              <span class="tag">AI Ethics & Safety</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Neural Net Intuition</span>
+              <span class="tag">Ethical AI</span>
             </div>
             <div class="progress-wrap">
               <div class="progress-info">
-                <span>Conceptual Awareness</span>
-                <span class="progress-val">80%</span>
+                <span>Learning Progress</span>
+                <span class="progress-val">65%</span>
               </div>
               <div class="progress-track">
-                <div class="progress-bar" style="width: 80%;"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skill 4: Prompt Writing & Engineering -->
-          <div class="glass-card skill-card">
-            <div class="skill-head">
-              <div class="skill-icon-box skill-prompt">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="skill-title">Prompt Writing</h3>
-                <span class="skill-badge">AI Productivity</span>
-              </div>
-            </div>
-            <p class="skill-desc">
-              Designing structured, context-rich prompts to steer AI models effectively for code generation, debugging, and analysis.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">Few-Shot Prompting</span>
-              <span class="tag">Chain of Thought</span>
-              <span class="tag">Role/Persona Design</span>
-              <span class="tag">Context Constraints</span>
-              <span class="tag">Structured JSON Outputs</span>
-            </div>
-            <div class="progress-wrap">
-              <div class="progress-info">
-                <span>Prompt Precision</span>
-                <span class="progress-val">90%</span>
-              </div>
-              <div class="progress-track">
-                <div class="progress-bar" style="width: 90%;"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skill 5: Developer Tools & Workflow -->
-          <div class="glass-card skill-card">
-            <div class="skill-head">
-              <div class="skill-icon-box skill-tools">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="16 18 22 12 16 6"/>
-                  <polyline points="8 6 2 12 8 18"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="skill-title">Developer Tools</h3>
-                <span class="skill-badge">Workflow</span>
-              </div>
-            </div>
-            <p class="skill-desc">
-              Comfortable with essential developer tools to write clean code, track versions, and build projects.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">VS Code</span>
-              <span class="tag">Git & GitHub</span>
-              <span class="tag">GCC / MinGW</span>
-              <span class="tag">Command Line / Bash</span>
-              <span class="tag">HTML / CSS / JS</span>
-            </div>
-            <div class="progress-wrap">
-              <div class="progress-info">
-                <span>Familiarity</span>
-                <span class="progress-val">78%</span>
-              </div>
-              <div class="progress-track">
-                <div class="progress-bar" style="width: 78%;"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skill 6: Problem Solving & Logic -->
-          <div class="glass-card skill-card">
-            <div class="skill-head">
-              <div class="skill-icon-box skill-logic">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <line x1="12" y1="8" x2="12" y2="12"/>
-                  <line x1="12" y1="16" x2="12.01" y2="16"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="skill-title">Problem Solving</h3>
-                <span class="skill-badge">Mindset</span>
-              </div>
-            </div>
-            <p class="skill-desc">
-              Breaking complex real-life challenges into logical steps, flowcharts, and structured algorithms.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">Mathematical Logic</span>
-              <span class="tag">Flowcharting</span>
-              <span class="tag">Debugging</span>
-              <span class="tag">Critical Thinking</span>
-              <span class="tag">Fast Adaptability</span>
-            </div>
-            <div class="progress-wrap">
-              <div class="progress-info">
-                <span>Analytical Mindset</span>
-                <span class="progress-val">88%</span>
-              </div>
-              <div class="progress-track">
-                <div class="progress-bar" style="width: 88%;"></div>
+                <div class="progress-bar" style="width: 65%;"></div>
               </div>
             </div>
           </div>
@@ -538,97 +639,100 @@
       </div>
     </section>
 
-    <!-- 4. PROJECTS SECTION -->
+    <!-- 5. PROJECTS SECTION -->
     <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">My Work</span>
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-desc">Practical applications and experiments built during my 1st year.</p>
+          <span class="section-badge">Practical Work</span>
+          <h2 class="section-title">Projects Showcase</h2>
+          <p class="section-desc">Hands-on applications built during my first-year B.Tech CSE (AI &amp; ML) studies.</p>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1 -->
+          <!-- Project 1: Student Management System (C) -->
           <div class="glass-card project-card">
             <div class="project-banner project-banner-c">
               <div class="code-preview">
-                <span class="code-line"><span class="c-keyword">#include</span> &lt;stdio.h&gt;</span>
-                <span class="code-line"><span class="c-type">int</span> <span class="c-func">main</span>() {</span>
-                <span class="code-line">&nbsp;&nbsp;<span class="c-func">printf</span>(<span class="c-str">"Student Database System\n"</span>);</span>
-                <span class="code-line">&nbsp;&nbsp;<span class="c-keyword">return</span> 0;</span>
-                <span class="code-line">}</span>
+                <span><span class="c-kw">#include</span> &lt;stdio.h&gt;</span>
+                <span><span class="c-ty">struct</span> <span class="c-fn">Student</span> { <span class="c-ty">char</span> name[50]; <span class="c-ty">int</span> roll; };</span>
+                <span><span class="c-ty">int</span> <span class="c-fn">main</span>() { <span class="c-fn">saveRecord</span>(); }</span>
               </div>
               <span class="project-tag-top">C Programming</span>
             </div>
             <div class="project-body">
               <h3 class="project-title">Student Record Management System</h3>
               <p class="project-desc">
-                A command-line application built in C that allows teachers and administrators to add, search, update, delete, and sort student records with binary file storage persistence.
+                A structured command-line application developed in C allowing teachers to insert, search, update, delete, 
+                and sort student academic records. Implements binary file I/O for persistent data storage across sessions.
               </p>
               <div class="project-tech-stack">
                 <span>C Language</span>
-                <span>File I/O</span>
+                <span>File Handling</span>
                 <span>Structures</span>
-                <span>CLI</span>
+                <span>Binary I/O</span>
+                <span>GCC</span>
               </div>
               <div class="project-actions">
                 <a href="#contact" class="btn btn-sm btn-primary">
-                  <span>Inquire / Code</span>
+                  <span>View Details</span>
                 </a>
                 <span class="project-status">✓ Completed</span>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 -->
+          <!-- Project 2: Python Assistant / Utility (Python Basic) -->
           <div class="glass-card project-card">
-            <div class="project-banner project-banner-ai">
+            <div class="project-banner project-banner-py">
               <div class="code-preview">
-                <span class="code-line"><span class="c-keyword">SYSTEM</span>: Expert AI Tutor</span>
-                <span class="code-line"><span class="c-type">USER</span>: Explain Pointers in C simply</span>
-                <span class="code-line"><span class="c-func">AI</span>: Memory address as a mailbox...</span>
+                <span><span class="c-kw">def</span> <span class="c-fn">ai_assistant</span>(query):</span>
+                <span>&nbsp;&nbsp;<span class="c-kw">return</span> f<span class="c-st">"Processing: {query}"</span></span>
+                <span><span class="c-fn">print</span>(<span class="c-fn">ai_assistant</span>(<span class="c-st">"JECRC B.Tech"</span>))</span>
               </div>
-              <span class="project-tag-top">AI & Prompting</span>
+              <span class="project-tag-top">Python (Basic)</span>
             </div>
             <div class="project-body">
-              <h3 class="project-title">AI Prompt Engineering Knowledge Hub</h3>
+              <h3 class="project-title">Python Interactive Study Assistant</h3>
               <p class="project-desc">
-                A curated repository of high-efficiency prompt templates designed for students: code explanation, unit-test generation, conceptual summaries, and automated research helpers.
+                A Python-based interactive utility tool designed for students to manage daily study goals, compute GPA / marks statistics, 
+                and execute quick calculation routines with clean formatted terminal outputs.
               </p>
               <div class="project-tech-stack">
-                <span>Prompt Engineering</span>
-                <span>Generative AI</span>
-                <span>LLMs</span>
-                <span>Markdown</span>
+                <span>Python 3</span>
+                <span>Data Structures</span>
+                <span>Modular Code</span>
+                <span>CLI</span>
               </div>
               <div class="project-actions">
                 <a href="#contact" class="btn btn-sm btn-primary">
-                  <span>View Prompts</span>
+                  <span>View Details</span>
                 </a>
                 <span class="project-status">⚡ Active</span>
               </div>
             </div>
           </div>
 
-          <!-- Project 3 -->
+          <!-- Project 3: Personal Web Portfolio (HTML, CSS, JS) -->
           <div class="glass-card project-card">
             <div class="project-banner project-banner-web">
               <div class="code-preview">
-                <span class="code-line"><span class="c-keyword">&lt;div</span> <span class="c-type">class</span>=<span class="c-str">"portfolio"</span>&gt;</span>
-                <span class="code-line">&nbsp;&nbsp;<span class="c-keyword">&lt;h1&gt;</span>Hello Jaipur!<span class="c-keyword">&lt;/h1&gt;</span></span>
-                <span class="code-line"><span class="c-keyword">&lt;/div&gt;</span></span>
+                <span><span class="c-kw">&lt;section</span> <span class="c-ty">id</span>=<span class="c-st">"portfolio"</span>&gt;</span>
+                <span>&nbsp;&nbsp;<span class="c-kw">&lt;h1&gt;</span>Stuti Varshney<span class="c-kw">&lt;/h1&gt;</span></span>
+                <span><span class="c-kw">&lt;/section&gt;</span></span>
               </div>
               <span class="project-tag-top">Web Development</span>
             </div>
             <div class="project-body">
-              <h3 class="project-title">Interactive Personal Portfolio</h3>
+              <h3 class="project-title">Responsive Student Portfolio Website</h3>
               <p class="project-desc">
-                This responsive, modern portfolio website built from scratch with custom CSS glassmorphism, responsive navigation, active scroll tracking, and interactive contact message handling.
+                A custom personal web portfolio built completely from scratch using semantic HTML5, modern CSS3 glassmorphism, 
+                and vanilla JavaScript. Features dynamic typewriter effects, scrollspy navigation, and responsive layouts.
               </p>
               <div class="project-tech-stack">
                 <span>HTML5</span>
-                <span>CSS3 (Gradients/Grid)</span>
+                <span>CSS3 (Flexbox/Grid)</span>
                 <span>JavaScript</span>
+                <span>Responsive</span>
               </div>
               <div class="project-actions">
                 <a href="#home" class="btn btn-sm btn-primary">
@@ -638,21 +742,105 @@
               </div>
             </div>
           </div>
+
+          <!-- Project 4: AI & ML Exploration Toolkit -->
+          <div class="glass-card project-card">
+            <div class="project-banner project-banner-ai">
+              <div class="code-preview">
+                <span><span class="c-kw">SYSTEM</span>: CSE AI/ML Student Helper</span>
+                <span><span class="c-ty">INPUT</span>: Explain Neural Activation</span>
+                <span><span class="c-fn">OUTPUT</span>: Non-linear decision boundary</span>
+              </div>
+              <span class="project-tag-top">AI &amp; ML (Learning)</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AI &amp; Prompt Engineering Knowledge Hub</h3>
+              <p class="project-desc">
+                A curated repository of structured prompts and conceptual summaries exploring machine learning algorithms, 
+                data preprocessing techniques, and AI productivity workflows for computer science undergrads.
+              </p>
+              <div class="project-tech-stack">
+                <span>Prompt Engineering</span>
+                <span>Generative AI</span>
+                <span>ML Concepts</span>
+                <span>Markdown</span>
+              </div>
+              <div class="project-actions">
+                <a href="#contact" class="btn btn-sm btn-primary">
+                  <span>View Details</span>
+                </a>
+                <span class="project-status">🌱 Learning</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. CONTACT SECTION (Split into 2 Sub-Sections as requested) -->
+    <!-- 6. CERTIFICATIONS / ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Milestones</span>
+          <h2 class="section-title">Certifications &amp; Achievements</h2>
+          <p class="section-desc">Recognitions and self-learning milestones achieved along my educational path.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Item 1 -->
+          <div class="glass-card achieve-card">
+            <div class="achieve-icon-wrap">🏆</div>
+            <div class="achieve-info">
+              <h4>Academic Distinction in Mathematics &amp; Sciences</h4>
+              <span class="achieve-issuer">Higher Secondary Academic Excellence</span>
+              <p>Recognized for consistent top-tier academic scores in mathematics, logical reasoning, and physical sciences.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="glass-card achieve-card">
+            <div class="achieve-icon-wrap">🚀</div>
+            <div class="achieve-info">
+              <h4>Active Member, JECRC University Tech Clubs</h4>
+              <span class="achieve-issuer">JECRC University, Jaipur</span>
+              <p>Participating actively in freshman coding workshops, campus tech talks, and collaborative peer learning circles.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="glass-card achieve-card">
+            <div class="achieve-icon-wrap">📜</div>
+            <div class="achieve-info">
+              <h4>Python Programming Foundations</h4>
+              <span class="achieve-issuer">Self-Paced Coursework &amp; Practice</span>
+              <p>Completed foundational coursework covering Python syntax, data structures, and algorithmic logic for computing.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="glass-card achieve-card">
+            <div class="achieve-icon-wrap">💡</div>
+            <div class="achieve-info">
+              <h4>AI &amp; Prompt Engineering Workshop</h4>
+              <span class="achieve-issuer">Online Technical Learning</span>
+              <p>Explored structured context prompting, few-shot generation, and AI-assisted developer workflows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT SECTION -->
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">Get In Touch</span>
-          <h2 class="section-title">Contact</h2>
-          <p class="section-desc">Have a question, an opportunity, or just want to connect? Reach out anytime!</p>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-desc">Interested in collaborating or have a question? I'd love to connect with you!</p>
         </div>
 
         <div class="contact-grid">
-          <!-- SUB-SECTION 1: Contact Information & Socials -->
+          <!-- Column 1: Contact Information & Socials -->
           <div class="glass-card contact-info-card">
             <div class="contact-card-header">
               <div class="card-icon-wrap">
@@ -662,12 +850,12 @@
               </div>
               <div>
                 <h3>Contact Information</h3>
-                <p class="text-muted">Feel free to reach out via email, phone, or socials.</p>
+                <p class="text-muted">Reach out directly via email, phone, or social platforms.</p>
               </div>
             </div>
 
             <div class="info-list">
-              <!-- Email Item -->
+              <!-- Email -->
               <div class="info-item">
                 <div class="info-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -687,7 +875,7 @@
                 </button>
               </div>
 
-              <!-- Phone Item -->
+              <!-- Phone -->
               <div class="info-item">
                 <div class="info-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -706,7 +894,7 @@
                 </button>
               </div>
 
-              <!-- Location Item -->
+              <!-- Location -->
               <div class="info-item">
                 <div class="info-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -716,49 +904,55 @@
                 </div>
                 <div class="info-details">
                   <span class="info-label">Location</span>
-                  <span class="info-val">Jaipur (JECRC), Rajasthan, India</span>
+                  <span class="info-val">Jaipur, Rajasthan, India</span>
                 </div>
               </div>
 
-              <!-- Status Card -->
+              <!-- College -->
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                </div>
+                <div class="info-details">
+                  <span class="info-label">College / University</span>
+                  <span class="info-val">JECRC University, Jaipur</span>
+                </div>
+              </div>
+
+              <!-- Availability Badge -->
               <div class="availability-badge">
                 <span class="pulsing-dot"></span>
-                <span>Open for 1st Year Internships, Mentorship & Projects</span>
+                <span>Open for 1st Year Internships, Mentorship &amp; Collaborations</span>
               </div>
             </div>
 
-            <!-- Social Links Section -->
+            <!-- Social Links: GitHub & LinkedIn (Section 8) -->
             <div class="socials-wrapper">
-              <span class="socials-title">Connect on Socials:</span>
+              <span class="socials-title">Connect on GitHub &amp; LinkedIn:</span>
               <div class="social-links">
-                <!-- LinkedIn -->
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.93 0 1.68-.75 1.68-1.68 0-.93-.75-1.69-1.68-1.69-.93 0-1.69.76-1.69 1.69 0 .93.76 1.68 1.69 1.68m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
-                  </svg>
-                  <span>LinkedIn</span>
-                </a>
-
                 <!-- GitHub -->
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile" aria-label="GitHub">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
                   </svg>
                   <span>GitHub</span>
                 </a>
 
-                <!-- Twitter / X -->
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="X (Twitter)" aria-label="X">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
                   <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.93 0 1.68-.75 1.68-1.68 0-.93-.75-1.69-1.68-1.69-.93 0-1.69.76-1.69 1.69 0 .93.76 1.68 1.69 1.68m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
                   </svg>
-                  <span>Twitter</span>
+                  <span>LinkedIn</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <!-- SUB-SECTION 2: Send a Message Form -->
+          <!-- Column 2: Send a Message Form -->
           <div class="glass-card contact-form-card">
             <div class="contact-card-header">
               <div class="card-icon-wrap">
@@ -769,16 +963,16 @@
               </div>
               <div>
                 <h3>Send a Message</h3>
-                <p class="text-muted">Drop your thoughts, questions, or opportunities below.</p>
+                <p class="text-muted">Drop a message directly to Stuti Varshney below.</p>
               </div>
             </div>
 
-            <!-- Interactive Contact Form -->
+            <!-- Form -->
             <form id="contactForm" class="contact-form" novalidate>
               <div class="form-group">
                 <label for="userName" class="form-label">Your Name <span class="req">*</span></label>
                 <div class="input-wrap">
-                  <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. Rahul Verma" required />
+                  <input type="text" id="userName" name="name" class="form-input" placeholder="e.g. Priyanshu Sharma" required />
                 </div>
                 <span class="error-text" id="nameError">Please enter your name</span>
               </div>
@@ -786,7 +980,7 @@
               <div class="form-group">
                 <label for="userEmail" class="form-label">Your Email <span class="req">*</span></label>
                 <div class="input-wrap">
-                  <input type="email" id="userEmail" name="email" class="form-input" placeholder="e.g. rahul@example.com" required />
+                  <input type="email" id="userEmail" name="email" class="form-input" placeholder="e.g. priyanshu@example.com" required />
                 </div>
                 <span class="error-text" id="emailError">Please enter a valid email address</span>
               </div>
@@ -794,14 +988,14 @@
               <div class="form-group">
                 <label for="msgSubject" class="form-label">Subject</label>
                 <div class="input-wrap">
-                  <input type="text" id="msgSubject" name="subject" class="form-input" placeholder="e.g. Let's collaborate or Say Hi!" />
+                  <input type="text" id="msgSubject" name="subject" class="form-input" placeholder="e.g. Project Collaboration or Hello!" />
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="userMessage" class="form-label">Your Message <span class="req">*</span></label>
                 <div class="input-wrap">
-                  <textarea id="userMessage" name="message" class="form-textarea" rows="4" placeholder="Type your message here..." required></textarea>
+                  <textarea id="userMessage" name="message" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
                 </div>
                 <span class="error-text" id="messageError">Please type your message</span>
               </div>
@@ -814,7 +1008,7 @@
                 <span id="btnText">Send Message</span>
               </button>
 
-              <!-- Live Submission Toast / Feedback -->
+              <!-- Feedback Confirmation -->
               <div class="form-feedback hidden" id="formFeedback">
                 <div class="feedback-icon">✓</div>
                 <div class="feedback-msg">
@@ -833,15 +1027,17 @@
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-left">
-        <a href="#home" class="footer-logo">&lt;Stuti.dev /&gt;</a>
-        <p class="footer-copy">Crafted with curiosity & code • JECRC Jaipur, Rajasthan, India</p>
+        <a href="#home" class="footer-logo">&lt;Stuti Varshney /&gt;</a>
+        <p class="footer-copy">B.Tech CSE (AI &amp; ML) • JECRC University, Jaipur, Rajasthan</p>
       </div>
 
       <div class="footer-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
       </div>
 
@@ -855,10 +1051,14 @@
     </div>
   </footer>
 
-  <!-- Toast Notification for Copy / Actions -->
+  <!-- Toast Notification for Copy / Feedback -->
   <div class="toast-notification" id="toast">Copied to clipboard!</div>
 
   <!-- JavaScript -->
   <script src="script.js"></script>
+
+  <!-- Botpress Webchat Integration -->
+  <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2026/10/11/17/20261011172156-94Y84C7S.js" defer></script>
 </body>
 </html>
